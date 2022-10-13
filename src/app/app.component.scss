@@ -5,7 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-$pink: rgba(245, 166, 204, 0.911);
+$pink: rgba(243, 146, 193, 0.911);
 $skyblue: rgb(73, 141, 243);
 $lightblue: rgb(153, 195, 255);
 $insta: rgb(101, 89, 202);
@@ -52,7 +52,7 @@ $fs-medium: 1.25rem;
 
 
 .text--second:hover {
-  background-color:$pink;
+  background-color: $pink;
   color: $white;
   transition: 1s;
   border: 2px solid $pink;
@@ -79,7 +79,6 @@ $fs-medium: 1.25rem;
   max-width: 100%;
 }
 
-
 .about-me {
   width: 100%;
   padding-top: 5rem;
@@ -97,7 +96,6 @@ $fs-medium: 1.25rem;
   color: $darkbrown;
   text-align: center;
 }
-
 
 .big__box {
   width: 60rem;
@@ -252,7 +250,6 @@ $fs-medium: 1.25rem;
   width: 2rem;
 }
 
-
 .above-footer {
   display: flex;
   justify-content: center;
@@ -387,7 +384,7 @@ $fs-medium: 1.25rem;
     width: 100%;
   }
 
-  .above-footer{
+  .above-footer {
     justify-content: center;
     align-items: center;
     display: flex;

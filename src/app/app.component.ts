@@ -9,13 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent implements OnInit {
+  
   title = 'portfolio';
   constructor(){} 
-  
   selectedIndex = 0;
   indicators = true;
   autoSlide = true;
-
 
   ngOnInit(){
     if(this.autoSlide){
