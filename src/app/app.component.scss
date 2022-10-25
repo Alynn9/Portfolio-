@@ -20,65 +20,6 @@ $blue: rgb(8, 33, 255);
 $fs-large: 1.75rem;
 $fs-medium: 1.25rem;
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar__image {
-  max-width: 3rem;
-}
-
-.navbar__text {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.text--first {
-  text-decoration: none;
-  color: $black;
-  font-size: $fs-medium;
-  padding-right: 2rem;
-}
-
-.navbar__text .text--second {
-  text-decoration: none;
-  color: $pink;
-  border: 2px solid ;
-  padding: 1rem;
-  border-radius: 40px;
-}
-
-
-.text--second:hover {
-  background-color: $pink;
-  color: $white;
-  transition: 1s;
-  border: 2px solid $pink;
-}
-
-.title-sub {
-  font-size: $fs-large;
-  text-align: center;
-  color: $darkbrown;
-}
-
-.title-sub__image {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 1rem;
-  max-height: 300px;
-  max-width: 300px;
-}
-
-.title-sub__image--setup {
-  display: flex;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 .about-me {
   width: 100%;
   padding-top: 5rem;
@@ -297,66 +238,6 @@ $fs-medium: 1.25rem;
   justify-content: space-between;
 }
 
-.footer-box {
-  margin-top: 10rem;
-  height: fit-content;
-  background-color: $pink;
-  width: 100%;
-}
-
-.footer-box--text {
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-size: $fs-medium;
-  color: $lightblue;
-}
-
-.footer-box__content--logo {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5rem;
-  width: 15rem;
-}
-
-.icons__twit {
-  color: $skyblue;
-  border: 5px solid ;
-  padding: 1rem;
-  border-radius: 5rem;
-}
-
-.icons__insta {
-  color: $insta;
-  border: 5px solid;
-  padding: 1rem;
-  border-radius: 5rem;
-}
-
-.icons__lin {
-  color: $lightblue;
-  border: 5px solid ;
-  padding: 1rem;
-  border-radius: 5rem;
-}
-
-.icons__git {
-  color: $navyblue;
-  text-decoration: none;
-  border: 5px solid;
-  padding: 1rem;
-  border-radius: 5rem;
-}
-
-.footer-box__icons {
-  margin: 2rem 0;
-  font-size: $fs-medium;
-  display: flex;
-  column-gap: 1rem;
-  margin: 2rem 0;
-  justify-content: center;
-}
 
 @media (max-width: 768px) {
   .big__box{
