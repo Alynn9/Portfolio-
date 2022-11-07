@@ -1,0 +1,90 @@
+@use 'colors';
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.above-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;/* i was obliged to use position absoulte other wise the design will be affected , i also tried to use z-index and changed the mardin to negative value in class footer-box instead of position absolute but it didn't work; */
+  width: 100%;
+}
+
+.above-footer--container {
+  background-color: colors.$navyblue;
+  color: colors.$white;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  height: 12rem;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  column-gap: 2rem;
+}
+
+.above-footer__content--one {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.above-footer__content--two {
+  font-size: colors.$fs-medium;
+  flex-direction: column;
+  padding-top: 2rem;
+  text-align: center;
+  align-items: center;
+  max-width: 15rem;
+}
+
+.above-footer__content--three {
+  flex-direction: column;
+  margin-top: 2rem;
+  height: fit-content;
+  background-color: colors.$purple;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .above-footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .above-footer--container {
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+    min-height: 20rem;
+    margin: 0 auto;
+  }
+
+  .above-footer__content--one,
+  .above-footer__content--two {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  } 
+
+  .above-footer__content--three {
+    max-width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  } 
+}

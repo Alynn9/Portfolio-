@@ -1,3 +1,5 @@
+@use 'colors';
+
 * { 
   margin: 0;
   padding: 0;
@@ -5,33 +7,18 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-$pink: rgba(240, 131, 183, 0.911);
-$skyblue: rgb(73, 141, 243);
-$lightblue: rgb(153, 195, 255);
-$insta: rgb(101, 89, 202);
-$lightgray: rgb(214,213,213);
-$gray: rgb(204, 204, 204);
-$darkbrown: rgba(10,10,10,0.9);
-$navyblue: rgb(14,14,51);
-$black: rgb(0,0,0);
-$white: rgb(255,255,255);
-$purple: rgb(124,0,124);
-$blue: rgb(8, 33, 255);
-$fs-large: 1.75rem;
-$fs-medium: 1.25rem;
-
 .footer-box {
   margin-top: 10rem;
   height: fit-content;
-  background-color: $pink;
+  background-color: colors.$pink;
   width: 100%;
 }
 
 .footer-box--text {
   text-align: center;
   font-family: 'Kanit', sans-serif;
-  font-size: $fs-medium;
-  color: $lightblue;
+  font-size: colors.$fs-medium;
+  color: colors.$lightblue;
 }
 
 .footer-box__content--logo {
@@ -44,28 +31,28 @@ $fs-medium: 1.25rem;
 }
 
 .icons__twit {
-  color: $skyblue;
+  color: colors.$skyblue;
   border: 5px solid ;
   padding: 1rem;
   border-radius: 5rem;
 }
 
 .icons__insta {
-  color: $insta;
+  color: colors.$insta;
   border: 5px solid;
   padding: 1rem;
   border-radius: 5rem;
 }
 
 .icons__lin {
-  color: $lightblue;
+  color: colors.$lightblue;
   border: 5px solid ;
   padding: 1rem;
   border-radius: 5rem;
 }
 
 .icons__git {
-  color: $navyblue;
+  color: colors.$navyblue;
   text-decoration: none;
   border: 5px solid;
   padding: 1rem;
@@ -74,9 +61,15 @@ $fs-medium: 1.25rem;
 
 .footer-box__icons {
   margin: 2rem 0;
-  font-size: $fs-medium;
+  font-size: colors.$fs-medium;
   display: flex;
   column-gap: 1rem;
   margin: 2rem 0;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer-box__content--logo {
+    padding-top: 12rem;
+  }
 }

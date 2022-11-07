@@ -1,0 +1,89 @@
+@use 'colors';
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-me {
+  width: 100%;
+  padding-top: 5rem;
+  background-color: colors.$pink;
+  max-height: 30rem;
+  color: colors.$white;
+  text-align: center;
+  font-size: colors.$fs-large;
+}
+
+.about-me_modify {
+  font-size: colors.$fs-medium;
+  margin: 0 2rem;
+  padding-top: 2rem;
+  color: colors.$darkbrown;
+  text-align: center;
+}
+
+.big__box {
+  width: 60rem;
+  border-radius: 1rem;
+  border: 2px solid colors.$lightgray;
+  height: fit-content;
+  background-color: colors.$white;
+  color: colors.$black;
+  justify-content: center;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.big__box--container {
+  width: 100%;
+  display: flex;
+}
+
+.big__box--boxes {
+  list-style: none;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: colors.$fs-medium;
+}
+
+.big__box--second-box {
+  border-right: 2px solid colors.$lightgray;
+  border-left: 2px solid colors.$lightgray;
+  padding: 1rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: colors.$fs-medium;
+}
+
+.modify-one {
+  padding-top: 1rem;
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+.box__text--modify-two {
+  padding: 1rem;
+  color: colors.$blue;
+}
+
+
+@media (max-width: 768px) {
+  .big__box{
+    height: fit-content;
+    max-width: 30rem;
+  }
+
+  .big__box--container {
+    flex-direction: column;
+  }
+
+  .big__box--second-box {
+    border-top: 2px solid colors.$lightgray;
+    border-bottom: 2px solid colors.$lightgray;
+    border-left: none;
+    border-right: none;
+  }
+}

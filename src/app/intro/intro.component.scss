@@ -1,24 +1,11 @@
+@use 'colors';
+
 * { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-$pink: rgba(240, 131, 183, 0.911);
-$skyblue: rgb(73, 141, 243);
-$lightblue: rgb(153, 195, 255);
-$insta: rgb(101, 89, 202);
-$lightgray: rgb(214,213,213);
-$gray: rgb(204, 204, 204);
-$darkbrown: rgba(10,10,10,0.9);
-$navyblue: rgb(14,14,51);
-$black: rgb(0,0,0);
-$white: rgb(255,255,255);
-$purple: rgb(124,0,124);
-$blue: rgb(8, 33, 255);
-$fs-large: 1.75rem;
-$fs-medium: 1.25rem;
 
 .navbar {
   display: flex;
@@ -37,31 +24,30 @@ $fs-medium: 1.25rem;
 
 .text--first {
   text-decoration: none;
-  color: $black;
-  font-size: $fs-medium;
+  color: colors.$black;
+  font-size: colors.$fs-medium;
   padding-right: 2rem;
 }
 
 .navbar__text .text--second {
   text-decoration: none;
-  color: $pink;
+  color: colors.$pink;
   border: 2px solid ;
   padding: 1rem;
   border-radius: 40px;
 }
 
-
 .text--second:hover {
-  background-color: $pink;
-  color: $white;
+  background-color: colors.$pink;
+  color: colors.$white;
   transition: 1s;
-  border: 2px solid $pink;
+  border: 2px solid colors.$pink;
 }
 
 .title-sub {
-  font-size: $fs-large;
+  font-size: colors.$fs-large;
   text-align: center;
-  color: $darkbrown;
+  color: colors.$darkbrown;
 }
 
 .title-sub__image {
@@ -78,4 +64,3 @@ $fs-medium: 1.25rem;
   margin: 0 auto;
   max-width: 100%;
 }
-
