@@ -5,7 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './my-recent-work.component.html',
   styleUrls: ['./my-recent-work.component.scss']
 })
-export class MyRecentWorkComponent implements OnInit {
-  ngOnInit(): void {
-  }
+export class MyRecentWorkComponent {
 }

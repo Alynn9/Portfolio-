@@ -5,7 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './above-footer.component.html',
   styleUrls: ['./above-footer.component.scss']
 })
-export class AboveFooterComponent implements OnInit {
-  ngOnInit(): void {
-  }
+export class AboveFooterComponent {
 }
