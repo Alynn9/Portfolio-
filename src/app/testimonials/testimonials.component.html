@@ -1,0 +1,37 @@
+<section class="testimonials">    
+  <h3 class="testimonials__title">People I've worked with have said some nice things...</h3>
+    
+  <div class = "testimonials__carousel">
+    <div class="testimonials__slider"  *ngFor ="let testimonials of testimonialsArray; let i = index ">
+      <div class="slider__content" [ngClass] = "{'active' : selectedIndex === i}">
+          
+        <img 
+          class="testimonials__slider--content--image" 
+          src ="{{testimonials.img}}" 
+          alt="pic one"
+        >
+      
+        <p class="testimonials__slider--content--quote">
+         {{testimonials.content}}
+        </p>
+      
+        <h3 class="testimonials__slider--content--author">{{testimonials.name}} </h3>
+  
+        <p class="testimonials__slider--content--author-info">{{testimonials.ncontent}}</p>
+        
+      </div>
+
+    </div> 
+    
+    <div *ngIf="indicators" class="carousel-dot-container">
+      <div class="dot" 
+        *ngFor ="let dot of testimonialsArray; let i = index"
+        [ngClass] = "{'selected': selectedIndex === i }"          
+        (click) ="selectedDiv(i)"
+      >
+      </div>
+
+    </div>
+
+  </div>
+</section>  

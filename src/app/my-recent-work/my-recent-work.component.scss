@@ -1,0 +1,45 @@
+@use 'src/app/_colors.scss';
+
+.my-recent-work {
+  color: colors.$darkbrown;
+  font-size: colors.$fs-medium;
+  margin-top: 10rem;
+}
+
+.my-recent-work__modify-three {
+  text-decoration: none;
+  color: colors.$pink;
+}
+
+.my-recent-work {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.li-tag {
+  list-style: none;
+  text-decoration: none;
+}
+
+.my-work {
+  display: flex;
+  justify-content: center;
+}
+
+.my-recent-work-img {
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .my-recent-work {
+    margin-top: 40rem; 
+  }
+
+  .my-work {
+    flex-direction: column;
+    width: 100%;
+  }
+}

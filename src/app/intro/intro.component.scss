@@ -1,0 +1,59 @@
+@use 'src/app/_colors.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__image {
+  max-width: 3rem;
+}
+
+.navbar__text {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.text--first {
+  text-decoration: none;
+  color: colors.$black;
+  font-size: colors.$fs-medium;
+  padding-right: 2rem;
+}
+
+.navbar__text .text--second {
+  text-decoration: none;
+  color: colors.$pink;
+  border: 2px solid ;
+  padding: 1rem;
+  border-radius: 40px;
+}
+
+.text--second:hover {
+  background-color: colors.$pink;
+  color: colors.$white;
+  transition: 1s;
+  border: 2px solid colors.$pink;
+}
+
+.title-sub {
+  font-size: colors.$fs-large;
+  text-align: center;
+  color: colors.$darkbrown;
+}
+
+.title-sub__image {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.title-sub__image--setup {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
